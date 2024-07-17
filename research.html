@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Titillium+Web:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+	<script language="JavaScript" src="js/HideShow.js"></script>
 </head>
 <body>
     <div class="container">
@@ -40,12 +41,16 @@
             <p class="paper-entry"><a href="https://proceedings.mlr.press/v216/oesterheld23a.html">Incentivizing honest performative predictions with proper scoring rules</a></p>
 			<p class="paper-follow-up">with Caspar Oesterheld, Johannes Treutlein, and Emery Cooper</p>
 			<p class="paper-follow-up">Uncertainty in Artificial Intelligence, 2023</p>
-			<div class="abstract-container">
-			<div class="abstract-toggle">Abstract <span class="arrow">▼</span></div>
-			<div class="abstract-content">
+			<a id="menucosts" href="javascript:expandIt(abmenucosts, menucosts)" style="text-decoration: none;">
+				&#9656 Abstract
+			</a>
+			</nobr>
+
+			<div id="abmenucosts" style="display: none; padding-left: 18">
+			<p style="padding-left: 30;">
+			We analytically characterize optimal monetary policy in a multisector economy with menu costs and show that inflation and output should move inversely following sectoral shocks. That is, after negative productivity shocks, inflation should be allowed to rise, and vice versa. In a baseline parameterization, optimal policy stabilizes nominal wages. This <i>nominal wage targeting</i> contrasts with inflation targeting, the optimal policy prescribed by the textbook New Keynesian model in which firms are permitted to adjust their prices only randomly and exogenously. The key intuition is that stabilizing inflation causes shocks to spill over across sectors, needlessly increasing the number of firms that must pay the fixed menu cost of price adjustment compared to optimal policy. Finally, we show in a quantitative model that, following a sectoral shock, nominal wage targeting reduces the welfare loss arising from menu costs by 81% compared to inflation targeting.
+			</p>
 			<p>Abstract: Proper scoring rules incentivize experts to accurately report beliefs, assuming predictions cannot influence outcomes. We relax this assumption and investigate incentives when predictions are performative, ie, when they can influence the outcome of the prediction, such as when making public predictions about the stock market. We say a prediction is a fixed point if it accurately reflects the expert's beliefs after that prediction has been made. We show that in this setting, reports maximizing expected score generally do not reflect an expert's beliefs, and we give bounds on the inaccuracy of such reports. We show that, for binary predictions, if the influence of the expert's prediction on outcomes is bounded, it is possible to define scoring rules under which optimal reports are arbitrarily close to fixed points. However, this is impossible for predictions over more than two outcomes. We also perform numerical simulations in a toy setting, showing that our bounds are tight in some situations and that prediction error is often substantial (greater than 5-10%). Lastly, we discuss alternative notions of optimality, including performative stability, and show that they incentivize reporting fixed points.</p>
-  </div>
-</div>
 			<p class="paper-entry"><a href="https://arxiv.org/abs/2302.00805">Conditioning predictive models: Risks and strategies</a></p>
 			<p  class="paper-follow-up">with Evan Hubinger, Adam Jermyn, Johannes Treutlein, and Kate Woolverton </p>
 			<p class="paper-follow-up">arXiv, 2023</p>
