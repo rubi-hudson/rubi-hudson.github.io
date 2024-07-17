@@ -1,47 +1,38 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: "Computer Modern Sans", sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
 }
 
 .sidebar {
-    width: 200px;
-    padding-right: 20px;
+    margin-bottom: 20px;
 }
 
 .profile-photo {
     width: 100%;
-    max-width: 200px;
+    max-width: 300px;
     height: auto;
-    margin-bottom: 20px;
-}
-
-nav ul, .contact-links {
-    list-style: none;
-    padding-left: 15px;
+    display: block;
+    margin: 0 auto;
 }
 
 nav ul {
-    font-size: 15pt;
-    margin-bottom: 20px;
+    list-style-type: none;
+    padding: 0;
 }
 
-nav ul li a, .contact-links li a {
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
     text-decoration: none;
     color: blue;
 }
@@ -51,68 +42,27 @@ nav ul li a.active {
     color: black;
 }
 
-.contact-links {
-    font-size: 13pt;
+.contact-info img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
 main {
-    flex: 1;
-    min-width: 300px;
     max-width: 800px;
-    padding-left: 20px;
 }
 
-h1 {
-    font-size: 24pt;
-    margin-bottom: 20px;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-.media-link, .coauthor-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.media-link:hover, .coauthor-link:hover {
-    text-decoration: underline;
-    color: blue;
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 768px) {
     .container {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .sidebar {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .profile-photo {
-        max-width: 40%;
-        float: left;
-        margin-right: 20px;
-    }
-
-    nav ul, .contact-links {
-        padding-left: 0;
+        width: 25%;
+        margin-right: 5%;
     }
 
     main {
-        padding-left: 0;
+        width: 70%;
     }
-}
-
-/* Twitter embed responsiveness */
-.twitter-tweet {
-    max-width: 100% !important;
-    width: 100% !important;
-}
-
-.twitter-tweet iframe {
-    max-width: 100% !important;
 }
