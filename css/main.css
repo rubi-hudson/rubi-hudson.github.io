@@ -48,7 +48,33 @@ nav ul li a {
 
 nav ul li a.active {
     font-weight: 700; /* Bold for the active item */
-    color: black;
+    color: #1a252f;
+}
+
+.social-link {
+    color: #2c3e50; /* or whatever color your regular links are */
+    font-weight: 600; /* to match the nav links */
+}
+
+main {
+    max-width: 800px;
+}
+
+main a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+a:hover, .social-link:hover {
+    text-decoration: underline;
+}
+
+a, .social-link {
+    transition: color 0.3s ease;
 }
 
 .contact-info img {
@@ -57,9 +83,7 @@ nav ul li a.active {
     margin-right: 5px;
 }
 
-main {
-    max-width: 800px;
-}
+
 
 @media screen and (min-width: 768px) {
     .container {
