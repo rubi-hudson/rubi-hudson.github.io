@@ -58,7 +58,7 @@ nav ul li a.active {
 
 .paper-entry {
     font-size: 24px;
-	margin-bottom: 2px;
+	margin-bottom: 0px;
 }
 
 .paper-entry a {
@@ -72,7 +72,7 @@ nav ul li a.active {
 }
 
 .paper-follow-up {
-	margin_top: 2px
+	margin_top: 0px
 }
 
 main {
