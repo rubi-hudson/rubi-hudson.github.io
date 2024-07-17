@@ -87,9 +87,34 @@ a, .social-link {
 
 
 
+.footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #f8f9fa;
+    margin-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-info a {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.contact-info img {
+    width: 20px;
+    margin-right: 5px;
+}
+
 @media screen and (min-width: 768px) {
     .container {
         flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .sidebar {
@@ -99,5 +124,9 @@ a, .social-link {
 
     main {
         width: 70%;
+    }
+
+    .footer {
+        order: 3;
     }
 }
