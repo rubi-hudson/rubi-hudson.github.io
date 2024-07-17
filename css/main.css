@@ -116,19 +116,20 @@ a, .social-link {
     
     .sidebar-content {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: flex-start;
     }
     
     .profile-photo {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
         margin: 0 20px 0 0;
+        flex-shrink: 0;
     }
     
     .sidebar-info {
         flex: 1;
-        min-width: 200px;
+        min-width: 0; /* This allows the sidebar info to shrink if needed */
     }
     
     .mobile-name {
@@ -144,6 +145,14 @@ a, .social-link {
     
     main h1 {
         display: none;
+    }
+
+    nav ul {
+        margin-top: 0;
+    }
+
+    .contact-info {
+        font-size: 14px;
     }
 }
 
