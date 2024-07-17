@@ -80,11 +80,11 @@ main p {
     font-weight: 500;
 }
 
-a:hover, .social-link:hover {
+a:hover, .social-link:hover, .paper-link:hover {
     text-decoration: underline;
 }
 
-a, .social-link {
+a, .social-link, .paper-link {
     transition: color 0.3s ease;
 }
 
