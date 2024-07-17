@@ -7,7 +7,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Titillium Web', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     color: #222;
 }
 
@@ -56,14 +56,6 @@ nav ul li a.active {
     font-weight: 600; /* to match the nav links */
 }
 
-a[href^="mailto:"] {
-    color: #2c3e50; /* or whatever color your links are */
-    text-decoration: none;
-}
-
-a[href^="mailto:"]:hover {
-    text-decoration: underline;
-}
 
 main {
     max-width: 800px;
