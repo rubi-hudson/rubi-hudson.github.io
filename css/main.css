@@ -122,3 +122,54 @@ a, .social-link {
         width: 72%;
     }
 }
+
+
+/* ... (keep your existing CSS above) ... */
+
+@media screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        order: -1;
+        width: 100%;
+        margin-right: 0;
+        position: static;
+        height: auto;
+        overflow-y: visible;
+    }
+    
+    .sidebar-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+        margin: 0 20px 0 0;
+    }
+    
+    .sidebar-info {
+        flex: 1;
+        min-width: 200px;
+    }
+    
+    .mobile-name {
+        width: 100%;
+        order: -1;
+        margin-bottom: 20px;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        color: #222;
+    }
+    
+    main h1 {
+        display: none;
+    }
+}
+
+/* ... (keep your existing CSS below) ... */
