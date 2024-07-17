@@ -101,3 +101,51 @@ a, .social-link {
         width: 70%;
     }
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    flex: 1;
+    /* Keep your existing container styles */
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info .social-link {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-info img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+    }
+    
+    .contact-info .social-link {
+        margin: 10px 0;
+    }
+}
