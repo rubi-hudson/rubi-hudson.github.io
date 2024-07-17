@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Rubi Hudson</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Titillium+Web:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .paper-title {
+            cursor: pointer;
+            color: #2980b9;
+            text-decoration: none;
+        }
+        .paper-title:hover {
+            text-decoration: underline;
+        }
+        .abstract-toggle {
+            cursor: pointer;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+        .abstract {
+            display: none;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <div class="mobile-name">Rubi Hudson</div>
+                
+                <div class="photo-info-container">
+                    <img src="img/rubi_hudson.jpeg" alt="Rubi Hudson" class="profile-photo">
+                    
+                    <div class="sidebar-info">
+                        <nav>
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="research.html" class="active">Research</a></li>
+                                <li><a href="files/Hudson, Rubi - Academic CV.pdf">CV</a></li>
+                                <li><a href="https://crossingtherubicon.substack.com/">Blog</a></li>
+                            </ul>
+                        </nav>
+                        
+                        <div class="contact-info">
+                            <p><img src="img/email_icon.svg" alt="Email"> Email: <a href="mailto:rubijhudson@gmail.com" class="social-link">rubijhudson@gmail.com</a></p>
+                            <p><img src="img/github_icon.svg" alt="GitHub"> GitHub: <a href="https://github.com/rubi-hudson" class="social-link">rubi-hudson</a></p>
+                            <p><img src="img/twitter_icon.svg" alt="Twitter"> Twitter: <a href="https://www.twitter.com/undo_hubris" class="social-link">@undo_hubris</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <h1>Research</h1>
+
+            <div class="paper">
+                <h2><a href="#" class="paper-title">Incentive Structures in AI Alignment: A Game Theoretic Approach</a></h2>
+                <span class="abstract-toggle">[Abstract]</span>
+                <div class="abstract">
+                    This paper explores the application of game theory to AI alignment, focusing on the design of incentive structures that promote beneficial AI behavior. We present a novel framework for modeling the interactions between AI systems and human values, and propose mechanisms for aligning AI objectives with societal goals.
+                </div>
+            </div>
+
+            <div class="paper">
+                <h2><a href="#" class="paper-title">The Economics of AI Safety: Balancing Innovation and Risk Mitigation</a></h2>
+                <span class="abstract-toggle">[Abstract]</span>
+                <div class="abstract">
+                    This study examines the economic implications of AI safety measures, analyzing the trade-offs between rapid AI development and risk mitigation strategies. We develop a model that quantifies the potential costs and benefits of various AI safety approaches, providing insights for policymakers and researchers in the field of AI governance.
+                </div>
+            </div>
+
+            <!-- Add more papers as needed -->
+
+        </main>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('.abstract-toggle').click(function() {
+                $(this).next('.abstract').slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>
