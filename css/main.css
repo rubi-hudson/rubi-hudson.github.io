@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sidebar {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 	line-height: 1.2;
 }
 
@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 nav ul {
     list-style-type: none;
     padding: 0;
-	margin-bottom: 6px;
+	margin-bottom: 8px;
     font-family: 'Titillium Web', sans-serif;
 }
 
