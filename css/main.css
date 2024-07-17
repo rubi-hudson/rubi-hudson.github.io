@@ -3,6 +3,9 @@ body {
     font-size: 20px; 
     line-height: 1.6;
     color: #333;
+	margin: 0;
+	min-height: 100vh;
+	overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,10 +19,11 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     padding: 20px;
+	flex: 1;
 }
 
 .sidebar {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 	line-height: 1.2;
 }
 
@@ -35,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 nav ul {
     list-style-type: none;
     padding: 0;
-	margin-bottom: 6px;
+	margin-bottom: 8px;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -107,15 +111,15 @@ a, .social-link {
     }
 
     .sidebar {
-        width: 23%;
+        width: 25%;
         margin-right: 5%;
-        position: sticky;  /* This makes the sidebar stick */
-        top: 20px;  /* Adjust this value to set the distance from the top of the viewport */
-        height: calc(100vh - 40px);  /* This sets the height to full viewport height minus top and bottom padding */
-        overflow-y: auto;  /* Allows scrolling within sidebar if content is too tall */
+        position: sticky;
+        top: 20px; 
+        height: calc(100vh - 40px); 
+        overflow-y: auto;
     }
 
     main {
-        width: 72%;
+        width: 30%;
     }
 }
