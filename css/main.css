@@ -56,9 +56,19 @@ nav ul li a.active {
     font-weight: 600; 
 }
 
-.paper-link {
-    color: #2c3e50;
-    font-weight: 700; 
+.paper-entry {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.paper-title {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.paper-date {
+    font-weight: normal;
+    margin-left: 10px;
 }
 
 main {
@@ -80,11 +90,11 @@ main p {
     font-weight: 500;
 }
 
-a:hover, .social-link:hover, .paper-link:hover {
+a:hover, .social-link:hover {
     text-decoration: underline;
 }
 
-a, .social-link, .paper-link {
+a, .social-link {
     transition: color 0.3s ease;
 }
 
