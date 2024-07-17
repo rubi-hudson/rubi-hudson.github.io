@@ -122,7 +122,6 @@ a, .social-link {
     .mobile-name {
         display: block;
         width: 100%;
-        order: -1;
         margin-bottom: 20px;
         font-family: 'Titillium Web', sans-serif;
         font-weight: 600;
