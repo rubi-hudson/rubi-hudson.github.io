@@ -122,33 +122,6 @@ a, .social-link {
     margin-right: 4px;
 }
 
-.abstract-container {
-  margin-top: 10px;
-}
-
-.abstract-toggle {
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.abstract-toggle .arrow {
-  display: inline-block;
-  transition: transform 0.3s;
-}
-
-.abstract-content {
-  display: none;
-  margin-top: 10px;
-}
-
-.abstract-container.active .abstract-content {
-  display: block;
-}
-
-.abstract-container.active .arrow {
-  transform: rotate(180deg);
-}
-
 @media screen and (max-width: 767px) {
     .container {
         flex-direction: column;
