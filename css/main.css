@@ -56,6 +56,14 @@ nav ul li a.active {
     font-weight: 600; 
 }
 
+main h2 {
+    margin-bottom: 0.25em;
+}
+
+h2 + .paper-entry {
+    margin-top: 0;
+}
+
 .paper-entry {
     font-size: 24px;
 	margin-bottom: 0px;
